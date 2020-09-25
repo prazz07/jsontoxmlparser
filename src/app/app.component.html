@@ -1,0 +1,23 @@
+<h1>See the console for the Transformed XML</h1>
+<div ng-app="myApp" ng-controller="formCtrl">
+  <form novalidate>
+    First Name:<br>
+    <input type="text" ng-model="user.firstName" [(ngModel)]="FirstName" name="FirstName"><br>
+    Last Name:<br>
+    <input type="text" ng-model="user.lastName" [(ngModel)]="LastName" [ngModelOptions]="{standalone: true}"><br>
+    <br>
+    Birth Date:<br>
+    <input type="text" ng-model="user.birthDate" [(ngModel)]="BirthDate" [ngModelOptions]="{standalone: true}"><br>
+    Street Address:<br>
+    <input type="text" ng-model="user.streetAddress" [(ngModel)]="StreetAddress" [ngModelOptions]="{standalone: true}"><br>
+    City :<br>
+    <input type="text" ng-model="user.city" [(ngModel)]="City" [ngModelOptions]="{standalone: true}"><br>
+    State:<br>
+    <input type="text" ng-model="user.state" [(ngModel)]="State" [ngModelOptions]="{standalone: true}"><br>
+    Zipcode:<br>
+    <input type="text" ng-model="user.Zip" [(ngModel)]="Zip" [ngModelOptions]="{standalone: true}"><br>
+    Email:<br>
+    <input type="text" ng-model="user.email" [(ngModel)]="Email" [ngModelOptions]="{standalone: true}"><br>
+    <button ng-click="submit()">SUBMIT</button>
+  </form>
+</div>
